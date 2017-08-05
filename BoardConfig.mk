@@ -16,10 +16,10 @@
 # inherit from common msm8976-common
 -include device/samsung/msm8976-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/c9ltechn
+DEVICE_PATH := device/samsung/c9lte
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := c9ltechn
+TARGET_OTA_ASSERT_DEVICE := c9lte
 
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt

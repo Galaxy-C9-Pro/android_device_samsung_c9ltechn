@@ -41,18 +41,18 @@ import java.util.Collections;
  *
  * {@hide}
  */
-public class Gts210velteRIL extends RIL {
+public class c9ltechnRIL extends RIL {
 
     private static final int RIL_UNSOL_ON_SS_LL = 11055;
 
     private boolean mIsGsm = false;
 
-    public Gts210velteRIL(Context context, int networkMode, int cdmaSubscription) {
+    public c9ltechnRIL(Context context, int networkMode, int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription, null);
         mQANElements = 6;
     }
 
-    public Gts210velteRIL(Context context, int preferredNetworkType,
+    public c9ltechnRIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
         mQANElements = 6;
