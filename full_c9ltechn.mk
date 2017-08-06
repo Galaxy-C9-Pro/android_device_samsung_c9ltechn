@@ -25,5 +25,5 @@ $(call inherit-product, device/samsung/c9ltechn/device.mk)
 PRODUCT_DEVICE := c9ltechn
 PRODUCT_NAME := full_c9ltechn
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := c9ltechn
+PRODUCT_MODEL := sm-c9000
 PRODUCT_MANUFACTURER := samsung

@@ -24,13 +24,6 @@ TARGET_OTA_ASSERT_DEVICE := c9ltechn
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
-# Telephony
-BOARD_RIL_CLASS := ../../../device/samsung/c9ltechn/ril
-
-# RIL
-TARGET_RIL_VARIANT := caf
-#BOARD_PROVIDES_LIBRIL := true
-
 # Kernel
 TARGET_KERNEL_CONFIG := msm8976_sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8976_sec_c9lte_chn_defconfig
@@ -48,5 +41,12 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# RIL
+TARGET_RIL_VARIANT := caf
+#BOARD_PROVIDES_LIBRIL := true
+
+# Telephony
+BOARD_RIL_CLASS := ../../../device/samsung/c9lte/ril
+
 # inherit from the proprietary version
--include vendor/samsung/gts210velte/BoardConfigVendor.mk
+-include vendor/samsung/c9ltechn/BoardConfigVendor.mk
