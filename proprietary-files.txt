@@ -55,6 +55,11 @@ vendor/lib64/libsensor1.so
 #vendor/lib64/libyasalgo.so
 vendor/lib/libsensor1.so
 
-##
-vendor/lib/libtime_genoff.so
-vendor/lib64/libtime_genoff.so
+# WiFi Firmware
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+#etc/firmware/bdwlan30_R01.bin
+#etc/firmware/otp30.bin
+#etc/firmware/qwlan30.bin
+#etc/firmware/utf30.bin
+#etc/firmware/utfbd30.bin
+#etc/firmware/utfbd30_R01.bin
