@@ -26,7 +26,7 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Kernel
 TARGET_KERNEL_CONFIG := msm8976_sec_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := msm8976_sec_c9lte_chn_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8976_sec_c9lte_swa_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
 # Partitions
@@ -40,6 +40,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# RIL
+#TARGET_RIL_VARIANT := caf
+BOARD_PROVIDES_LIBRIL := true
 
 # Telephony
 BOARD_RIL_CLASS := ../../../device/samsung/c9lte-common/ril
