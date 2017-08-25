@@ -41,5 +41,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Telephony
+BOARD_RIL_CLASS := ../../../device/samsung/c9lte-common/ril
+
 # inherit from the proprietary version
 -include vendor/samsung/c9ltechn/BoardConfigVendor.mk
