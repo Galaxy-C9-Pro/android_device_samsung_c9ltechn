@@ -14,11 +14,17 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/samsung/c9ltechn
+
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/samsung/c9ltechn/c9ltechn-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+# NFC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/nfc/libnfc-sec.conf:system/etc/libnfc-sec.conf
 
 # Inherit from c9lte-common
 $(call inherit-product, device/samsung/c9lte-common/msm8976.mk)
