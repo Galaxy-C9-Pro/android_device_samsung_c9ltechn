@@ -19,7 +19,7 @@
 DEVICE_PATH := device/samsung/c9ltechn
 
 # Includes
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := c9ltechn
