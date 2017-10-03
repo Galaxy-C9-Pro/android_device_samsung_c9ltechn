@@ -20,7 +20,7 @@ DEVICE_PATH := device/samsung/c9ltechn
 $(call inherit-product-if-exists, vendor/samsung/c9ltechn/c9ltechn-vendor.mk)
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # NFC
 PRODUCT_COPY_FILES += \
