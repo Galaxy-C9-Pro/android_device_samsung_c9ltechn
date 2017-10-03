@@ -3,4 +3,4 @@
 # RIL
 DEVICE_PROVISIONED=1
 ro.multisim.set_audio_params=true
-#ro.telephony.ril_class=c9lteRIL
+ro.telephony.ril_class=c9ltechnRIL
