@@ -22,10 +22,7 @@ DEVICE_PATH := device/samsung/c9ltechn
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := c9ltechn
-
-# Board
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := c9ltechn,c9lte
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
