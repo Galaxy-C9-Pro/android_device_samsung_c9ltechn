@@ -18,7 +18,6 @@ lib/libsec-ril.so
 lib/libsec-ril-dsds.so
 lib/libsecril-client.so
 lib/librilutils.so
-lib/libreference-ril
 lib64/libprotobuf-cpp-full.so
 lib64/libreference-ril.so
 lib64/libril.so
@@ -27,12 +26,12 @@ lib64/libsec-ril.so
 lib64/libsec-ril-dsds.so
 lib64/libsecril-client.so
 lib64/librilutils.so
-lib64/libreference-ril
 lib64/librmnetctl.so
 vendor/bin/qti
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
+vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libmdmdetect.so
@@ -40,6 +39,11 @@ vendor/lib64/libnetmgr.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/libxml.so
+#
+# Wireless
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
+etc/firmware/wlan/prima/WCNSS_cfg.dat
 #
 #lib64/libfloatingfeature.so
 #lib/libfloatingfeature.so
