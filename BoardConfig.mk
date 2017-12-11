@@ -22,7 +22,7 @@ DEVICE_PATH := device/samsung/c9ltechn
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := c9ltechn,c9lte
+#TARGET_OTA_ASSERT_DEVICE := c9ltechn,c9lte
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8976_sec_c9lte_chn_defconfig
