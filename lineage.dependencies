@@ -13,7 +13,7 @@
   }
   {
     "repository": "android_kernel_samsung_msm8976",
-    "target_path": "kernel/samsung/msm8976"
+    "target_path": "kernel/samsung/c9pro"
   }
   {
     "repository": "android_device_samsung_qcom-common",

@@ -54,6 +54,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
 # Inherit from msm8976-common
-$(call inherit-product, device/samsung/msm8976-common/msm8976.mk)
+$(call inherit-product, device/samsung/c9lte-common/msm8976.mk)
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/c9ltechn/c9ltechn-vendor.mk)

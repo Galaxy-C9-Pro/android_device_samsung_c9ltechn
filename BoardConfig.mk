@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from common msm8976-common
--include device/samsung/msm8976-common/BoardConfigCommon.mk
+-include device/samsung/c9lte-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/c9ltechn
 
