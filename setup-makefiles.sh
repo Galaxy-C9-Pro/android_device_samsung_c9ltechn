@@ -19,7 +19,7 @@ set -e
 
 # Required!
 export DEVICE=c9ltechn
-export DEVICE_COMMON=c9lte-common
+export DEVICE_COMMON=msm8976-common
 export VENDOR=samsung
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@

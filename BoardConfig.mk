@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common c9lte-common
--include device/samsung/c9lte-common/BoardConfigCommon.mk
+# inherit from common msm8976-common
+-include device/samsung/msm8976-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/c9ltechn
 
@@ -22,7 +22,15 @@ DEVICE_PATH := device/samsung/c9ltechn
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assert
-#TARGET_OTA_ASSERT_DEVICE := c9ltechn,c9lte
+TARGET_OTA_ASSERT_DEVICE := c9ltechn,c9lte
+
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
+# Kernel
+#BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=permissive
+#TARGET_KERNEL_SOURCE := kernel/samsung/c9pro
+TARGET_KERNEL_CONFIG := lineage_c9pro_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
@@ -37,8 +45,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/c9ltechn/ril
-BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm7260
 SIM_COUNT := 2
 
