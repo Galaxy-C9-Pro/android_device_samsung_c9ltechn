@@ -32,18 +32,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9330.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9330.xml
 
-# Boot animation
-#TARGET_SCREEN_HEIGHT := 1920
-#TARGET_SCREEN_WIDTH := 1080
-
-# Device characteristics
-#PRODUCT_CHARACTERISTICS := phone
-#$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
-# Device init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
-
 # Radio
 PRODUCT_PACKAGES += \
     librmnetctl \
