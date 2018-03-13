@@ -36,11 +36,18 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Protobuf
+PROTOBUF_SUPPORTED := true
+
+# Peripheral manager
+TARGET_PER_MGR_ENABLED := true
+
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/c9ltechn/ril
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm7260
-SIM_COUNT := 2
+TARGET_HAS_DUALSIMS := true
+#TARGET_RIL_VARIANT := caf
 
 # inherit from the proprietary version
 -include vendor/samsung/c9ltechn/BoardConfigVendor.mk
