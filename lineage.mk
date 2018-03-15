@@ -14,5 +14,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=c9ltezh \
-    BUILD_FINGERPRINT=samsung/c9ltezh/c9ltechn:6.0.1/MMB29M/C9000ZHU1AQG2:user/release-keys \
-    PRIVATE_BUILD_DESC="c9ltezh-user 6.0.1 MMB29M C9000ZHU1AQG2 release-keys"
+    BUILD_FINGERPRINT=samsung/c9ltezh/c9ltechn:7.1.1/NMF26X/C9000ZHU1BQL3:user/release-keys \
+    PRIVATE_BUILD_DESC="c9ltezh-user 7.1.1 NMF26X C9000ZHU1BQL3 release-keys"
