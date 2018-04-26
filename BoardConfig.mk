@@ -28,8 +28,6 @@ TARGET_OTA_ASSERT_DEVICE := c9ltechn,c9lte
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-#BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=permissive
-#TARGET_KERNEL_SOURCE := kernel/samsung/c9pro
 TARGET_KERNEL_CONFIG := lineage_c9pro_defconfig
 
 # Partitions
