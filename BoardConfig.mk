@@ -28,7 +28,7 @@ TARGET_OTA_ASSERT_DEVICE := c9ltechn,c9lte
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_c9pro_defconfig
+TARGET_KERNEL_CONFIG := msm8976_sec_c9lte_chn_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
